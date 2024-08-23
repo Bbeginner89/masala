@@ -177,7 +177,7 @@ function fn(arr, arg1 , arg2){
   let newArray =[]; 
   for (let i of arr){
     if (i>=arg1 && i<=arg2  ){
-      console.log(i)
+      //console.log(i)
       newArray.push(i)
     }
   }
@@ -186,11 +186,7 @@ function fn(arr, arg1 , arg2){
 }
 
 let result = fn(arr, 2, 7);
-console.log(result) */
-
-
-
-
+console.log(result)                          */ 
 
 
 
@@ -198,6 +194,27 @@ console.log(result) */
 
 
 // *!    need to solve this
+let arr = [5, 3, 8, 1];
+
+function fn(arr, arg1 , arg2){
+  for (let i in arr){
+    
+    let value = arr[i]
+    
+     
+    if (value>=arg1 ){
+      arr.splice(value)
+      console.log(value)
+      console.log(arr)
+      
+    }
+  }
+  
+
+}
+
+let result = fn(arr, 2, 7);
+console.log(result)  
 
 
 
@@ -208,7 +225,7 @@ console.log(result) */
   { fullName: "Pete Hunt", id: 2 },
   { fullName: "Mary Key", id: 3 }
 ]
- */
+ 
 let john = { name: "John", surname: "Smith", id: 1 };
 let pete = { name: "Pete", surname: "Hunt", id: 2 };
 let mary = { name: "Mary", surname: "Key", id: 3 };
@@ -230,13 +247,7 @@ function getName(array){
 
 }
 
-console.log(getName(users))
-
-
-
-
-
-
+console.log(getName(users))   */
 
 
 
