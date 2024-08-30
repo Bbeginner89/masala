@@ -48,7 +48,18 @@ console.log(getLength(text)) */
 /**shunday function yozingki unga text berib number qiymat berilsa, shu texni uznuligi numberdan kattal bolsa  
  * textni shu numbergacha kesib qolganiga ... belisini qoshisin.
  masalan:
- let srt="100 qator so'z"
- let num=10
+
   exampleFunction(str,num) //100 qator...
  */
+
+
+let srt="100 qator so'z"
+let num=10
+
+function names(str,num) {
+   if (str.length>num) return str.slice(0,num)
+    
+  }
+  
+
+console.log(names(srt,num))
