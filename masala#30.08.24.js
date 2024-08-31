@@ -31,17 +31,17 @@ console.log(a); */
  * input: "luffy is still joyboy"        output: 6
  */
 
-/*let text = "   fly me   to   the moon  "
+let text = "   fly me   to   the moon  "
 function getLength(inputString) {
     let arr = inputString.split(" ")
-    let last = arr.filter(function (value) {
+    let last = arr.filter((value) {
       return value.length>0
     } 
   )
   return last[last.length-1].length        
 }
 
-console.log(getLength(text)) */ 
+console.log(getLength(text)) 
 
 
 // *TODO #4
@@ -52,7 +52,7 @@ console.log(getLength(text)) */
   exampleFunction(str,num) //100 qator...
  */
 
-
+/*
 let srt="100 qator so'z"
 let num=10
 
@@ -62,4 +62,4 @@ function names(str,num) {
   }
   
 
-console.log(names(srt,num))
+console.log(names(srt,num))*/
