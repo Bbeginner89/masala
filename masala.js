@@ -139,20 +139,20 @@ va camel case holatda qaytarib bersin masalan:
 
 
 
-// var cacheMemory = [];
-// const add = function memoizedAdd(a , b){
-//   var sum = a+b;
-//   if (cacheMemory.includes(sum)){
-//     return (`Retrieving from cache: ${a}, ${b},  sum : ${sum}` )
+var cacheMemory = [];
+const add = function memoizedAdd(a , b){
+  var sum = a+b;
+  if (cacheMemory.includes(sum)){
+    return (`Retrieving from cache: ${a}, ${b},  sum : ${sum}` )
   
-//   }
-//   else{
-//     cacheMemory.push(sum)
-//     return sum
+  }
+  else{
+    cacheMemory.push(sum)
+    return sum
     
-//   }
+  }
 
-// }
+}
 
 // // const add = function memoizedAdd(a , b){
 // //   var cacheMemory = [];
@@ -212,6 +212,8 @@ function fn(arr, arg1 , arg2){
 
 let result = fn(arr, 2, 7);
 console.log(result)  
+
+splice bn yechiladi 
 
 
 
