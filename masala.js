@@ -126,27 +126,25 @@ va camel case holatda qaytarib bersin masalan:
 // console.log(camelize("-webkit-transition"))
 
 
+//*!-----------------------------------------------------------------------------------------------------------------
 
-
-/**cache lash uchun function yozib bering.
- 2ta qiymat olsin va shu ikalasini yiginidisini birinchi cache dan qidirib qaytarsin agar cache shu yigindilar bolmasa undan song hisoblab natijani cache qoyisn va userga natijani qaytarsin.
- console.log da cachedan olib beryabdimi yoki yangidan hisoblab qaytardimi bilish uchun habar yozib qoying. masalan 
- //birinchi marta funciton ni chaqirganda:
+// *TODO cache lash uchun function yozib bering.
+// * 2ta qiymat olsin va shu ikalasini yiginidisini birinchi cache dan qidirib qaytarsin agar cache shu yigindilar bolmasa undan song hisoblab natijani cache qoyisn va userga natijani qaytarsin.
+// *console.log da cachedan olib beryabdimi yoki yangidan hisoblab qaytardimi bilish uchun habar yozib qoying. masalan 
+// * birinchi marta funciton ni chaqirganda: 
  
- console.log(add(2, 3)); //natija logda: "Calculating result: 2,3", qaytgab qiymat: 5
- //ikkinchi marta chaqirganda:
- console.log(add(2, 3)); // "Retrieving from cache: 2,3", qaytgab qiymat: 5 **/
+//*console.log(add(2, 3)); //natija logda: "Calculating result: 2,3", qaytgab qiymat: 5
+//ikkinchi marta chaqirganda:
+//* console.log(add(2, 3)); // "Retrieving from cache: 2,3", qaytgab qiymat: 5 **/
 
 
 
 // var cacheMemory = [];
-
 // const add = function memoizedAdd(a , b){
 //   var sum = a+b;
-  
 //   if (cacheMemory.includes(sum)){
 //     return (`Retrieving from cache: ${a}, ${b},  sum : ${sum}` )
-    
+  
 //   }
 //   else{
 //     cacheMemory.push(sum)
@@ -156,9 +154,19 @@ va camel case holatda qaytarib bersin masalan:
 
 // }
 
+// // const add = function memoizedAdd(a , b){
+// //   var cacheMemory = [];
+// //   var sum = a+b;
+// //   let asdf = cacheMemory.includes(sum)
+// //   return asdf? `Retrieving from cache sum: ${sum}`:cacheMemory.push(sum)
+  
+
+// // }
+
 
 // console.log(add(4, 3)); 
 // console.log(add(4, 3));
+ 
 
 
 
@@ -194,21 +202,10 @@ console.log(result)                          */
 
 
 // *!    need to solve this
-let arr = [5, 3, 8, 1];
 
 function fn(arr, arg1 , arg2){
-  for (let i in arr){
-    
-    let value = arr[i]
-    
-     
-    if (value>=arg1 ){
-      arr.splice(value)
-      console.log(value)
-      console.log(arr)
-      
-    }
-  }
+  let arr = [5, 3, 8, 1];
+  arr.filter(value => value>arg2);
   
 
 }
