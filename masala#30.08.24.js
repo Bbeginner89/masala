@@ -31,17 +31,17 @@ console.log(a); */
  * input: "luffy is still joyboy"        output: 6
  */
 
-let text = "   fly me   to   the moon  "
-function getLength(inputString) {
-    let arr = inputString.split(" ")
-    let last = arr.filter((value) {
-      return value.length>0
-    } 
-  )
-  return last[last.length-1].length        
-}
+// let text = "   fly me   to   the moon  "
+// function getLength(inputString) {
+//     let arr = inputString.split(" ")
+//     let last = arr.filter((value) {
+//       return value.length>0
+//     } 
+//   )
+//   return last[last.length-1].length        
+// }
 
-console.log(getLength(text)) 
+// console.log(getLength(text)) 
 
 
 // *TODO #4

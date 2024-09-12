@@ -179,22 +179,22 @@ const add = function memoizedAdd(a , b){
 //  * let arr = [5, 3, 8, 1];
 //  * expampleFunction(arr 1 4) //natija: [3,1]
  
-/*let arr = [5, 3, 8, 1];
+// let arr = [5, 3, 8, 1];
 
-function fn(arr, arg1 , arg2){
-  let newArray =[]; 
-  for (let i of arr){
-    if (i>=arg1 && i<=arg2  ){
-      //console.log(i)
-      newArray.push(i)
-    }
-  }
-  return newArray
+// function fn(arr, arg1 , arg2){
+//   let newArray =[]; 
+//   for (let i of arr){
+//     if (i>=arg1 && i<=arg2  ){
+//       //console.log(i)
+//       newArray.push(i)
+//     }
+//   }
+//   return newArray
 
-}
+// }
 
-let result = fn(arr, 2, 7);
-console.log(result)                          */ 
+// let result = fn(arr, 2, 7);
+// console.log(result)                          
 
 
 
@@ -203,21 +203,22 @@ console.log(result)                          */
 
 // *!    need to solve this
 
-function fn(arr, arg1 , arg2){
-  let arr = [5, 3, 8, 1];
-  arr.filter(value => value>arg2);
+// function fn(arr, arg1 , arg2){
+//   let arr = [5, 3, 8, 1];
+//   arr.filter(value => value>arg2);
   
 
-}
+// }
 
-let result = fn(arr, 2, 7);
-console.log(result)  
+// let result = fn(arr, 2, 7);
+// console.log(result)  
 
-splice bn yechiladi 
+// splice bn yechiladi 
 
 
 
-// *TODO #3 yuqoridagi  users arrayga qarasez har bir userni name va surname qiymati bor. shunday function yozingki agar unga shu users arrayi berilsa name, surname orniga fulName qaytarsin masalan natija 
+// *TODO #3 yuqoridagi  users arrayga qarasez har bir userni name va surname qiymati bor. shunday function yozingki agar 
+//unga shu users arrayi berilsa name, surname orniga fulName qaytarsin masalan natija 
 // * taxmiman shunday bolsin:
 /* [
   { fullName: "John Smith", id: 1 },
