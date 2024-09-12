@@ -220,7 +220,7 @@ ichidagi id siga teng bolsin, id unique bolishini hisobga oling:
 // console.log(getPipeFunction)
 
 
-// *TODO 2. counter yozish kerak har safar function chaqirilganda count 1taga oshishi kerak
+// *TODO 9. counter yozish kerak har safar function chaqirilganda count 1taga oshishi kerak
 
 
 function fn1() {
