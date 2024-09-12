@@ -179,40 +179,62 @@ ichidagi id siga teng bolsin, id unique bolishini hisobga oling:
  sizdan qilinadigan talab a va b function larini yozish. */ 
 
 
-let text = "Some valuuue"
-function b(arg) {
-  let obj = {}
-  for (const element of arg) {
-    obj[element] = obj[element]+1 || 1 
-  }
-  return obj
+// let text = "Some value"
+// function b(arg) {
+//   let obj = {}
+//   for (const element of arg) {
+//     obj[element] = obj[element]+1 || 1 
+//   }
+//   return obj
   
-}
+// }
 
-let max  = 0
-function a(arg) {
-  let countObj = {}
-  for (const key in arg) {
-    if (arg[key]>max) {
-      max = arg[key]
-      countObj.count = arg[key]
-      countObj.letter = key
+// let max  = 0
+// function a(arg) {
+//   let countObj = {}
+//   for (const key in arg) {
+//     if (arg[key]>max) {
+//       max = arg[key]
+//       countObj.count = arg[key]
+//       countObj.letter = key
       
-    }
+//     }
 
-  }
- console.log(countObj)
+//   }
+//  console.log(countObj)    // *! composeda bu ishlatiladi
+//  return countObj            // *! pipe da bu ishlatiladi
   
+//}
+
+
+// const compose = (a, b) => str => a(b(str));
+// const getMaxLetter = compose(a,b)
+// getMaxLetter("Some value!")                                   // *! Bajarildi
+
+
+// *TODO #8 Tedagini pipe functionda yozish
+
+
+// const pipe = (a, b) => str => b(a(str));
+// const getPipeFunction = pipe(b,a)(text);
+// console.log(getPipeFunction)
+
+
+// *TODO 2. counter yozish kerak har safar function chaqirilganda count 1taga oshishi kerak
+
+
+function fn1() {
+  let count = 0
+  function fn2() {
+    count++
+    console.log(count)
+    
+  }
+  return fn2
 }
 
-
-const compose = (a, b) => str => a(b(str));
-const getMaxLetter = compose(a,b)
-getMaxLetter("Some value!")                                   // *! Bajarildi
-
-
-
-
-
-
+const counter = fn1()
+counter()
+counter()
+counter()
 
