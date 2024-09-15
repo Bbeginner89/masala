@@ -73,7 +73,7 @@ let students = [
 // function getByObj(obj) {
 //   let key = `${obj.key}`
 //   let val = obj.value
-//   let user  = students.filter(value=>value[key] ===val)                 c
+//   let user  = students.filter(value=>value[key] ===val)          // *! Bajarildi        
 //   console.log(user)
   
 // }
@@ -139,18 +139,18 @@ let students = [
    natija array korinishda qaytsin
 
  */
-let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
-let newArr = arr.map(value=>value.split('').sort().join(''))
-//let neeewArr = newArr.sort(value=> va)
-//console.log(newArr)
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+// let newArr = arr.map(value=>value.split('').sort().join(''))
+// //let neeewArr = newArr.sort(value=> va)
+// //console.log(newArr)
 
-function findDuplicates(arr) {
-  let newArr = arr.map(value=>value.split('').sort().join(''))                 // *! yechish kere
-  return newArr.filter((item, index) => item  );                                
-}
-console.log(findDuplicates(arr))
+// function findDuplicates(arr) {
+//   let newArr = arr.map(value=>value.split('').sort().join(''))                 // *! yechish kere
+//   return newArr.filter((item, index) => item  );                                
+// }
+// console.log(findDuplicates(arr))
 
-students.map(function fn(value,index,array) {
+// students.map(function fn(value,index,array) {
 
   
-})
+// })
