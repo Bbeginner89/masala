@@ -31,7 +31,6 @@
 let sum = 0
 let index = 0
 function summaRecursion(n) {
-	console.log(sum)
 	if (index<=n) {
 		sum+=index
 		index++
@@ -43,6 +42,7 @@ function summaRecursion(n) {
 }
 
 summaRecursion(4)
+console.log(sum)
 
 
 //3- vazifa
