@@ -17,32 +17,29 @@
  * n=4 bolsa, 1+2+3+4=10
  */
 
-// function summa(n) {
-// 	let sum = 0;
-// 	for (let index = 0; index <= n; index++) {
-// 		sum+=index
-		
-// 	}
-// 	console.log(sum)
-	
-// }
-// summa(4)
-
 let sum = 0
-let index = 0
-function summaRecursion(n) {
-	if (index<=n) {
+
+/*function recursiveSum(number) {               
+	for (let index = 0; index <= number; index++) {
 		sum+=index
-		index++
-		return
-		
+	}                                   // *!  for loop bn yechim
+	console.log(sum)
+	
+}                */
+
+/*function recursiveSum(number) {            // *! recursive fn bn yechim
+	if (number>0) {
+		sum+=number
 	}
-	summaRecursion(n-1)
+	else{
+		console.log(sum)
+		return
+	}
+	recursiveSum(number-1)
 	
 }
 
-summaRecursion(4)
-console.log(sum)
+recursiveSum(10)            */
 
 
 //3- vazifa
@@ -53,15 +50,28 @@ console.log(sum)
 
 // function factorial(n) {
 // 	let facto = 1
-// 	for (let index = 1; index <= n ; index++) {
+// 	for (let index = 1; index <= n ; index++) {               // *!  for loop bn yechim
 // 		facto *=index
 		
 // 	}
 // 	console.log(facto)
 	
 // }
+let facto = 1
+function recursiveFactorial(number) {
+	if (number>0) {
+		facto*=number
 
-// factorial(5)
+	} else {
+		console.log(facto)
+		return
+		
+	}
+	recursiveFactorial(number-1)
+	
+}
+
+recursiveFactorial(5)
 
 
 //4 vazifa
