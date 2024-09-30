@@ -17,7 +17,7 @@
  * n=4 bolsa, 1+2+3+4=10
  */
 
-let sum = 0
+// let sum = 0
 
 /*function recursiveSum(number) {               
 	for (let index = 0; index <= number; index++) {
@@ -79,13 +79,35 @@ recursiveFactorial(5)   */
  */
 
 
-function fibonaci(number) {
-	if (number>=2) {
-		console.log(fibonaci(number-1)) 
-		
+
+let n1 = 0
+let n2 = 1
+let sum = 0
+
+// function fibonaci(n) {
+// 	for (let index=1; index < n; index++){                  // *!  for loop bn yechim
+// 		sum = n1+n2
+// 		n1 = n2
+// 		n2 = sum
+			
+// 	}
+// 	console.log(n2)
+
+// }
+
+function fibonaci(n) {
+	if (n>=2) {
+		sum = n1+n2
+		n1 = n2
+		n2 = sum
 	}
-	
+	else{
+		console.log(n2)                                 // *! recursive fn bn yechim
+		return
+	}
+	fibonaci(n-1)
+
 }
 
-console.log(fibonaci(6))
+fibonaci(16)
 
