@@ -48,30 +48,29 @@ recursiveSum(10)            */
  */
 
 
-// function factorial(n) {
-// 	let facto = 1
-// 	for (let index = 1; index <= n ; index++) {               // *!  for loop bn yechim
-// 		facto *=index
+/*function factorial(n) {
+	let facto = 1
+	for (let index = 1; index <= n ; index++) {               // *!  for loop bn yechim
+		facto *=index
 		
-// 	}
-// 	console.log(facto)
+	}
+	console.log(facto)
 	
-// }
-let facto = 1
-function recursiveFactorial(number) {
+}  */
+
+
+/*let facto = 1
+function recursiveFactorial(number) {                     // *! recursive fn bn yechim
 	if (number>0) {
 		facto*=number
-
 	} else {
 		console.log(facto)
 		return
-		
 	}
 	recursiveFactorial(number-1)
-	
 }
 
-recursiveFactorial(5)
+recursiveFactorial(5)   */
 
 
 //4 vazifa
@@ -79,4 +78,14 @@ recursiveFactorial(5)
  * fibonaci nima degani? https://en.wikipedia.org/wiki/Fibonacci_number
  */
 
+
+function fibonaci(number) {
+	if (number>=2) {
+		console.log(fibonaci(number-1)) 
+		
+	}
+	
+}
+
+console.log(fibonaci(6))
 
